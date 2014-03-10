@@ -1,1 +1,46 @@
 /*main.css*/
+
+body {
+	margin: 0px;
+	background: black;
+}
+
+* {
+	box-sizing: border-box;
+}
+.title {
+	font-size: 20px;
+	text-align: center;
+	color: yellow;
+	padding: 20px;
+}
+.ultimate-ttt-board {
+}
+.ultimate-ttt-board-row, .tic-tac-toe-board-row {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+/*.ultimate-ttt-board-row > *, .tic-tac-toe-board-row {
+	-webkit-box-flex: 1;
+}*/
+
+.tic-tac-toe-board {
+	/*display: inline-block;*/
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+}
+.ultimate-ttt-board-row:first-child .tic-tac-toe-board {
+	border-top: 2px solid white;
+}
+.ultimate-ttt-board-row .tic-tac-toe-board:first-child {
+	border-left: 2px solid white;
+}
+.tic-tac-toe-square {
+	height: 40px;
+	width: 40px;
+	border-right: 1px solid yellow;
+	border-bottom: 1px solid yellow;
+	color: yellow;
+	/*display: inline-block;*/
+}
